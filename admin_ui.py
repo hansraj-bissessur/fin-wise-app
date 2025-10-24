@@ -26,14 +26,13 @@ def format_file_size(bytes_size):
 st.title("Financial Literacy Chatbot - Admin Portal")
 st.caption("Manage the document knowledge base for the RAG chatbot.")
 
-# --- Tabs (replaces the React component routing) ---
 tab_upload, tab_documents, tab_admin = st.tabs([
     "📄 Document Upload", 
     "🗂️ Document History", 
     "⚙️ Admin Panel"
 ])
 
-# --- Tab 1: Document Upload (replaces DocumentUpload.js) ---
+# --- Tab 1: Document Upload ---
 with tab_upload:
     st.subheader("Upload New Documents")
     
@@ -108,7 +107,7 @@ with tab_upload:
     elif submitted and not uploaded_files:
         st.warning("Please select at least one file to upload.")
 
-# --- Tab 2: Document History (replaces DocumentList.js) ---
+# --- Tab 2: Document History ---
 with tab_documents:
     st.subheader("Uploaded Document History")
     
@@ -125,7 +124,7 @@ with tab_documents:
             }
         )
 
-# --- Tab 3: Admin Panel (replaces AdminPanel.js) ---
+# --- Tab 3: Admin Panel ---
 with tab_admin:
     st.subheader("System Health Check")
     
