@@ -148,8 +148,7 @@ with tab_admin:
     # Replicates the clearAllDocuments API call
     admin_key = st.text_input(
         "Enter Admin Key to clear database", 
-        type="password",
-        help="Matches the 'admin123' key from your Java code."
+        type="password"
     )
     
     if st.button("Clear All Documents", type="primary", disabled=(not admin_key)):
