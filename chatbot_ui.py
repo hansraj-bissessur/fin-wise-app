@@ -37,7 +37,7 @@ if prompt := st.chat_input("Ask a question about budgeting, saving, etc."):
             # Call the FastAPI backend's /chat endpoint
             api_request_data = {
                 "message": prompt,
-                "user_id": "streamlit_user_123" # You could make this dynamic
+                "user_id": "streamlit_user_123" 
             }
             
             response = requests.post(
