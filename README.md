@@ -49,7 +49,7 @@ FinWise follows a microservices-inspired architecture:
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/hansraj-bissessur/finwise.git
+git clone https://github.com/hansraj-bissessur/fin-wise-app.git
 cd finwise
 ```
 
