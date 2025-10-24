@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+streamlit
+langchain
+langchain-core
+langchain-community  # Still needed for other components
+langchain-ollama   # NEW: For Ollama LLM and Embeddings
+langchain-redis    # NEW: For Redis Vector Store
+redis
+pypdf         # For PDFs
+python-docx   # For .docx
+openpyxl      # For .xlsx
+requests
+pandas        # For displaying dataframes in Streamlit
